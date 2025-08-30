@@ -1,0 +1,2 @@
+timestamp,question,sql_query,result
+2025-08-30 19:15:42,List all employees.,SELECT * FROM Naresh_it_employee1,"[('Omkar Nallagoni', 'Data Science', 75000.0), ('Naresh', 'Data Science', 90000.0), ('Phani', 'Data Science', 88000.0), ('Naga babu', 'Data Engineer', 50000.0), ('Ajay', 'Data Engineer', 35000.0), ('Pawan', 'Data Engineer', 60000.0)]"

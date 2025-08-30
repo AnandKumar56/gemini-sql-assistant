@@ -172,8 +172,16 @@ if menu == "Home":
                     explanation = explain_sql_query(sql_query)
                     st.write(explanation)
 
+
+    # --- DB Schema View/Close Buttons ---
+    if 'show_schema' not in st.session_state:
+        st.session_state['show_schema'] = False
+
     schema_btn = st.button("View DB Schema")
     if schema_btn:
+        st.session_state['show_schema'] = True
+
+    if st.session_state['show_schema']:
         st.subheader("Database Schema")
         schema = get_db_schema(os.path.join("db", "Naresh_it_employee1.db"))
         if "Error" in schema:
@@ -183,6 +191,9 @@ if menu == "Home":
                 st.markdown(f"### Table: `{tname}`")
                 df_schema = pd.DataFrame(cols, columns=["Field Name", "Type"])
                 st.dataframe(df_schema, use_container_width=True)
+        close_btn = st.button("Close Schema")
+        if close_btn:
+            st.session_state['show_schema'] = False
 
 elif menu == "History":
     st.title("Search History")

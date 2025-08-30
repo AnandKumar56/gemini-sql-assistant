@@ -141,7 +141,7 @@ Contributions are welcome! Please feel free to submit pull requests or open issu
 
 📬 **Contact**
 
-If you have any questions or suggestions, please feel free to contact me at [your_email@example.com](mailto:anandkumardalwaie1@gmail.com).
+If you have any questions or suggestions, please feel free to contact me at [anandkumardalwaie1@example.com](mailto:anandkumardalwaie1@gmail.com).
 
 💖 **Thanks**
 
